@@ -1,4 +1,4 @@
-package com.learn.springboot.api.health;
+package com.learn.springboot.api.actuator.health;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.actuate.health.Health;

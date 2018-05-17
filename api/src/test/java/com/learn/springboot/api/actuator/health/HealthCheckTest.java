@@ -1,13 +1,10 @@
-package com.learn.springboot.api.health;
+package com.learn.springboot.api.actuator.health;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.springframework.boot.actuate.health.HealthIndicator;
-import org.springframework.boot.actuate.health.Status;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
