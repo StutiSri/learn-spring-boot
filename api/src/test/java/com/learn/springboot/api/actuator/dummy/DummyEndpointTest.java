@@ -13,7 +13,7 @@ public class DummyEndpointTest {
     private DummyEndpoint dummyEndPoint;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         dummyEndPoint = new DummyEndpoint();
     }
 
@@ -21,10 +21,6 @@ public class DummyEndpointTest {
     public void shouldReturnResultOnInvocation() {
         Map<String, Object> messages = new HashMap<>();
         messages.put("message", "Its Dummy. You Dummy!");
-
-        assertEquals("dummy", dummyEndPoint.getId());
-        assertEquals(true, dummyEndPoint.isEnabled());
-        assertEquals(false, dummyEndPoint.isSensitive());
         assertEquals(messages, dummyEndPoint.invoke());
     }
 }
